@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PieShop", "PieShop\PieShop.csproj", "{B5869CA6-D2E9-48DE-BFB2-BBE305338790}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieShop.Data", "PieShop.Data\PieShop.Data.csproj", "{85F87815-8645-4274-9570-B917F310E41D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PieShop.Data", "PieShop.Data\PieShop.Data.csproj", "{85F87815-8645-4274-9570-B917F310E41D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieShop.Model", "PieShop.Model\PieShop.Model.csproj", "{86EA89DD-FE3C-4FCB-A19C-510C59A70CEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PieShop.Model", "PieShop.Model\PieShop.Model.csproj", "{86EA89DD-FE3C-4FCB-A19C-510C59A70CEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

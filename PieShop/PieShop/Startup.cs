@@ -33,7 +33,10 @@ namespace PieShop
             //register own services !
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IPieRepository, PieRepository>();
-            
+            services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<CartRepository>(c => CartRepository.GetCart(c));
+            services.AddHttpContextAccessor();
+            services.AddSession();
             //register framework services
             services.AddControllersWithViews();
         }
@@ -48,6 +51,8 @@ namespace PieShop
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseSession();
 
             app.UseRouting();
 
