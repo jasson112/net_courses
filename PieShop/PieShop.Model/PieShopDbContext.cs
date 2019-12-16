@@ -1,11 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace PieShop.Model
 {
-    public class PieShopDbContext : DbContext
+    public class PieShopDbContext : IdentityDbContext<IdentityUser>
     {
         public PieShopDbContext(DbContextOptions<PieShopDbContext> options) : base(options)
         {
